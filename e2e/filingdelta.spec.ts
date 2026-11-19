@@ -10,7 +10,7 @@ test("P-01 guided path, URL restoration, note reload, and SH-02 export", async (
   await expect(
     page.getByRole("heading", { name: /See what changed/ }),
   ).toBeVisible();
-  await expect(page.getByText(/self-directed concept project/)).toBeVisible();
+  await expect(page.getByText(/independent product project/)).toBeVisible();
   await page.getByRole("link", { name: /Compare CrowdStrike/ }).click();
   await expect(page).toHaveURL(/\/compare\/crwd\/2024-2025/);
   await expect(
