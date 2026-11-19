@@ -1,0 +1,262 @@
+{
+  "id": "cmp:0001559720-25-000010:0001559720-26-000004:item-1a:align-1.0.0",
+  "route": "/compare/abnb/2024-2025",
+  "fixtureVersion": "v1",
+  "algorithmVersion": "align-1.0.0",
+  "generatedAt": "2026-11-17T08:15:00.000Z",
+  "status": "partial",
+  "issuer": {
+    "id": "issuer:0001559720",
+    "cik": "0001559720",
+    "ticker": "ABNB",
+    "legalName": "Airbnb, Inc.",
+    "displayName": "Airbnb"
+  },
+  "sectionCode": "item-1a",
+  "sectionTitle": "Item 1A — Risk Factors",
+  "olderFiling": {
+    "id": "filing:0001559720-25-000010",
+    "issuerId": "issuer:0001559720",
+    "accession": "0001559720-25-000010",
+    "form": "10-K",
+    "periodEnd": "2024-12-31",
+    "filedAt": "2025-02-13",
+    "primaryDocument": "abnb-20241231.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/abnb-20241231.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/0001559720-25-000010-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "newerFiling": {
+    "id": "filing:0001559720-26-000004",
+    "issuerId": "issuer:0001559720",
+    "accession": "0001559720-26-000004",
+    "form": "10-K",
+    "periodEnd": "2025-12-31",
+    "filedAt": "2026-02-12",
+    "primaryDocument": "abnb-20251231.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/0001559720-26-000004-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "counts": {
+    "total": 1,
+    "added": 0,
+    "removed": 0,
+    "modified": 1
+  },
+  "changes": [
+    {
+      "id": "chg:cmp:0001559720-25-000010:0001559720-26-000004:item-1a:align-1.0.0:modified:7dc9ffcf6e11",
+      "comparisonId": "cmp:0001559720-25-000010:0001559720-26-000004:item-1a:align-1.0.0",
+      "kind": "modified",
+      "ordinal": 1,
+      "oldPassage": {
+        "blockId": "block:0001559720-25-000010:item-1a:00001:3a0ce265878d",
+        "displayText": "If we fail to retain or add hosts and guests, if hosts fail to provide high-quality stays and experiences, if our new offerings and initiatives are unsuccessful or if our community support offerings are inadequate, our business, results of operations, and financial condition would be materially adversely affected.",
+        "headingPath": [
+          "Risk Factors Summary"
+        ],
+        "source": {
+          "id": "src:filing:0001559720-25-000010:block:0001559720-25-000010:item-1a:00001:3a0ce265878d:block:0001559720-25-000010:item-1a:00001:3a0ce265878d",
+          "filingId": "filing:0001559720-25-000010",
+          "blockIds": [
+            "block:0001559720-25-000010:item-1a:00001:3a0ce265878d"
+          ],
+          "accession": "0001559720-25-000010",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/abnb-20241231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/0001559720-25-000010-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "3a0ce265878dc5fab50cfaa5f99d4d74735b5ee5933c94be593ec246ea873f19"
+        }
+      },
+      "newPassage": {
+        "blockId": "block:0001559720-26-000004:item-1a:00002:76262b9efb30",
+        "displayText": "If we fail to retain or add hosts and guests, if hosts do not provide high-quality stays, experiences, and services, if new offerings and initiatives on our platform are unsuccessful, or if our community support functions are inadequate, our business, results of operations, and financial condition would be materially adversely affected.",
+        "headingPath": [
+          "Risk Factors Summary"
+        ],
+        "source": {
+          "id": "src:filing:0001559720-26-000004:block:0001559720-26-000004:item-1a:00002:76262b9efb30:block:0001559720-26-000004:item-1a:00002:76262b9efb30",
+          "filingId": "filing:0001559720-26-000004",
+          "blockIds": [
+            "block:0001559720-26-000004:item-1a:00002:76262b9efb30"
+          ],
+          "accession": "0001559720-26-000004",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/0001559720-26-000004-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "76262b9efb301299bb07c07729230a42162387c9cd90a1c9c876a7fb39792c4b"
+        }
+      },
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [
+        {
+          "kind": "equal",
+          "text": "If we fail to retain or add hosts and guests, if hosts "
+        },
+        {
+          "kind": "removed",
+          "text": "fail"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "removed",
+          "text": "to"
+        },
+        {
+          "kind": "equal",
+          "text": " provide high-quality stays"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "equal",
+          "text": "and "
+        },
+        {
+          "kind": "removed",
+          "text": "experiences"
+        },
+        {
+          "kind": "equal",
+          "text": ", if "
+        },
+        {
+          "kind": "removed",
+          "text": "our "
+        },
+        {
+          "kind": "equal",
+          "text": "new offerings and initiatives "
+        },
+        {
+          "kind": "equal",
+          "text": "are unsuccessful"
+        },
+        {
+          "kind": "equal",
+          "text": " or if our community support "
+        },
+        {
+          "kind": "removed",
+          "text": "offerings"
+        },
+        {
+          "kind": "equal",
+          "text": " are inadequate, our business, results of operations, and financial condition would be materially adversely affected."
+        }
+      ],
+      "newWordSpans": [
+        {
+          "kind": "equal",
+          "text": "If we fail to retain or add hosts and guests, if hosts "
+        },
+        {
+          "kind": "added",
+          "text": "do"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "added",
+          "text": "not"
+        },
+        {
+          "kind": "equal",
+          "text": " provide high-quality stays"
+        },
+        {
+          "kind": "added",
+          "text": ","
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "added",
+          "text": "experiences, "
+        },
+        {
+          "kind": "equal",
+          "text": "and "
+        },
+        {
+          "kind": "added",
+          "text": "services"
+        },
+        {
+          "kind": "equal",
+          "text": ", if "
+        },
+        {
+          "kind": "equal",
+          "text": "new offerings and initiatives "
+        },
+        {
+          "kind": "added",
+          "text": "on our platform "
+        },
+        {
+          "kind": "equal",
+          "text": "are unsuccessful"
+        },
+        {
+          "kind": "added",
+          "text": ","
+        },
+        {
+          "kind": "equal",
+          "text": " or if our community support "
+        },
+        {
+          "kind": "added",
+          "text": "functions"
+        },
+        {
+          "kind": "equal",
+          "text": " are inadequate, our business, results of operations, and financial condition would be materially adversely affected."
+        }
+      ],
+      "alignmentReason": "light_edit",
+      "similarity": 0.8,
+      "orderChanged": false
+    }
+  ],
+  "exclusions": [
+    {
+      "code": "raw_source_ingestion_pending",
+      "count": 1,
+      "reason": "These manually verified source passages keep the local demo usable. Full-section generation and raw source hashes require an authorized SEC contact header."
+    }
+  ],
+  "method": {
+    "parserVersion": "manual-source-review-2026-11-17",
+    "normalizerVersion": "normalizer-1.0.0",
+    "comparisonVersion": "align-1.0.0"
+  }
+}

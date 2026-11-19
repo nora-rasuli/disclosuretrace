@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.vercel/
+.cursor/
+coverage/
+playwright-report/
+test-results/
+.cache/
+.env
+.env.local
+data/raw/
+data/reports/*.json
+data/reports/*.md
+!.gitkeep
+.DS_Store
+*.swp
+*.tsbuildinfo

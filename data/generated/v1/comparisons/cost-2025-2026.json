@@ -1,0 +1,186 @@
+{
+  "id": "cmp:0000909832-25-000101:0000909832-26-000093:item-1a:align-1.0.0",
+  "route": "/compare/cost/2025-2026",
+  "fixtureVersion": "v1",
+  "algorithmVersion": "align-1.0.0",
+  "generatedAt": "2026-11-17T08:15:00.000Z",
+  "status": "partial",
+  "issuer": {
+    "id": "issuer:0000909832",
+    "cik": "0000909832",
+    "ticker": "COST",
+    "legalName": "Costco Wholesale Corporation",
+    "displayName": "Costco"
+  },
+  "sectionCode": "item-1a",
+  "sectionTitle": "Item 1A — Risk Factors",
+  "olderFiling": {
+    "id": "filing:0000909832-25-000101",
+    "issuerId": "issuer:0000909832",
+    "accession": "0000909832-25-000101",
+    "form": "10-K",
+    "periodEnd": "2025-08-31",
+    "filedAt": "2025-10-08",
+    "primaryDocument": "cost-20250831.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/0000909832-25-000101-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "newerFiling": {
+    "id": "filing:0000909832-26-000093",
+    "issuerId": "issuer:0000909832",
+    "accession": "0000909832-26-000093",
+    "form": "10-K",
+    "periodEnd": "2026-08-30",
+    "filedAt": "2026-10-07",
+    "primaryDocument": "cost-20260830.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/0000909832-26-000093-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "counts": {
+    "total": 1,
+    "added": 0,
+    "removed": 0,
+    "modified": 1
+  },
+  "changes": [
+    {
+      "id": "chg:cmp:0000909832-25-000101:0000909832-26-000093:item-1a:align-1.0.0:modified:ad6a89fd48a5",
+      "comparisonId": "cmp:0000909832-25-000101:0000909832-26-000093:item-1a:align-1.0.0",
+      "kind": "modified",
+      "ordinal": 1,
+      "oldPassage": {
+        "blockId": "block:0000909832-25-000101:item-1a:00001:98171ea72ed1",
+        "displayText": "Our financial and operational performance is highly dependent on our U.S. and Canadian operations, which comprised 86% and 84% of net sales and operating income in 2025. Within the U.S., we are highly dependent on our California operations, which comprised 26% of U.S. net sales in 2025.",
+        "headingPath": [
+          "Business and Operating Risks"
+        ],
+        "source": {
+          "id": "src:filing:0000909832-25-000101:block:0000909832-25-000101:item-1a:00001:98171ea72ed1:block:0000909832-25-000101:item-1a:00001:98171ea72ed1",
+          "filingId": "filing:0000909832-25-000101",
+          "blockIds": [
+            "block:0000909832-25-000101:item-1a:00001:98171ea72ed1"
+          ],
+          "accession": "0000909832-25-000101",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/0000909832-25-000101-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "98171ea72ed1dc2d9a91083932c24e088e492a332dc0e4fac7071c9eb0e40176"
+        }
+      },
+      "newPassage": {
+        "blockId": "block:0000909832-26-000093:item-1a:00002:9df7facc980b",
+        "displayText": "Our financial and operational performance is highly dependent on our U.S. and Canadian operations, which comprised 86% and 83% of net sales and operating income in 2026. Within the U.S., we are highly dependent on our California operations, which comprised 26% of U.S. net sales in 2026.",
+        "headingPath": [
+          "Business and Operating Risks"
+        ],
+        "source": {
+          "id": "src:filing:0000909832-26-000093:block:0000909832-26-000093:item-1a:00002:9df7facc980b:block:0000909832-26-000093:item-1a:00002:9df7facc980b",
+          "filingId": "filing:0000909832-26-000093",
+          "blockIds": [
+            "block:0000909832-26-000093:item-1a:00002:9df7facc980b"
+          ],
+          "accession": "0000909832-26-000093",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/0000909832-26-000093-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "9df7facc980b8d037b7e1d22b2ef01d6aa7d058cb205542e61ecc1372068979c"
+        }
+      },
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [
+        {
+          "kind": "equal",
+          "text": "Our financial and operational performance is highly dependent on our U.S. and Canadian operations, which comprised 86% and "
+        },
+        {
+          "kind": "removed",
+          "text": "84"
+        },
+        {
+          "kind": "equal",
+          "text": "% of net sales and operating income in "
+        },
+        {
+          "kind": "removed",
+          "text": "2025"
+        },
+        {
+          "kind": "equal",
+          "text": ". Within the U.S., we are highly dependent on our California operations, which comprised 26% of U.S. net sales in "
+        },
+        {
+          "kind": "removed",
+          "text": "2025"
+        },
+        {
+          "kind": "equal",
+          "text": "."
+        }
+      ],
+      "newWordSpans": [
+        {
+          "kind": "equal",
+          "text": "Our financial and operational performance is highly dependent on our U.S. and Canadian operations, which comprised 86% and "
+        },
+        {
+          "kind": "added",
+          "text": "83"
+        },
+        {
+          "kind": "equal",
+          "text": "% of net sales and operating income in "
+        },
+        {
+          "kind": "added",
+          "text": "2026"
+        },
+        {
+          "kind": "equal",
+          "text": ". Within the U.S., we are highly dependent on our California operations, which comprised 26% of U.S. net sales in "
+        },
+        {
+          "kind": "added",
+          "text": "2026"
+        },
+        {
+          "kind": "equal",
+          "text": "."
+        }
+      ],
+      "alignmentReason": "light_edit",
+      "similarity": 0.8,
+      "orderChanged": false
+    }
+  ],
+  "exclusions": [
+    {
+      "code": "raw_source_ingestion_pending",
+      "count": 1,
+      "reason": "These manually verified source passages keep the local demo usable. Full-section generation and raw source hashes require an authorized SEC contact header."
+    }
+  ],
+  "method": {
+    "parserVersion": "manual-source-review-2026-11-17",
+    "normalizerVersion": "normalizer-1.0.0",
+    "comparisonVersion": "align-1.0.0"
+  }
+}

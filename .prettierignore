@@ -1,0 +1,13 @@
+.next
+node_modules
+coverage
+evidence
+data/generated
+data/reports
+pnpm-lock.yaml
+AGENTS.md
+project-package.md
+project-brief.md
+research.md
+implementation-handoff.md
+.cursor/

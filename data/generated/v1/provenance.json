@@ -1,0 +1,301 @@
+{
+  "generatedAt": "2026-11-17T08:15:00.000Z",
+  "filings": [
+    {
+      "ticker": "CRWD",
+      "comparisonId": "cmp:0001535527-24-000007:0001535527-25-000009:item-1a:align-1.0.0",
+      "older": {
+        "id": "filing:0001535527-24-000007",
+        "issuerId": "issuer:0001535527",
+        "accession": "0001535527-24-000007",
+        "form": "10-K",
+        "periodEnd": "2024-01-31",
+        "filedAt": "2024-03-07",
+        "primaryDocument": "crwd-20240131.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/crwd-20240131.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/0001535527-24-000007-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "newer": {
+        "id": "filing:0001535527-25-000009",
+        "issuerId": "issuer:0001535527",
+        "accession": "0001535527-25-000009",
+        "form": "10-K",
+        "periodEnd": "2025-01-31",
+        "filedAt": "2025-03-10",
+        "primaryDocument": "crwd-20250131.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/crwd-20250131.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/0001535527-25-000009-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "counts": {
+        "total": 3,
+        "added": 1,
+        "removed": 1,
+        "modified": 1
+      },
+      "review": [
+        {
+          "kind": "added",
+          "heading": "Summary of Risk Factors",
+          "newText": "The July 19 Incident has had, and is expected to continue to have, an adverse effect on our business, sales, customer and partner relations, reputation, results of operations and financial condition.",
+          "note": "Verified in the newer filing's Item 1A summary; no corresponding prior summary passage was found in the reviewed source context."
+        },
+        {
+          "kind": "modified",
+          "heading": "Risks Related to Ownership of Our Common Stock",
+          "oldText": "Sales of substantial amounts of our Class A common stock in the public markets, or the perception that they might occur, could reduce the price that our Class A common stock might otherwise attain and may dilute your voting power and your ownership interest in us.",
+          "newText": "Sales of substantial amounts of our common stock in the public markets, or the perception that they might occur, could reduce the price that our common stock might otherwise attain and may dilute your voting power and your ownership interest in us.",
+          "note": "Verified in both official filings; Class A references were removed after the Class B conversion."
+        },
+        {
+          "kind": "removed",
+          "heading": "Risks Related to Ownership of Our Common Stock",
+          "oldText": "The dual class structure of our common stock has the effect of concentrating voting control with those stockholders who held our capital stock prior to the completion of our initial public offering, including our executive officers, employees, directors, principal stockholders, and their affiliates, which will limit your ability to influence the outcome of matters submitted to our stockholders for approval.",
+          "note": "Verified in the prior filing; the newer filing reports that all Class B shares converted in December 2024 and omits this Item 1A passage."
+        }
+      ]
+    },
+    {
+      "ticker": "ABNB",
+      "comparisonId": "cmp:0001559720-25-000010:0001559720-26-000004:item-1a:align-1.0.0",
+      "older": {
+        "id": "filing:0001559720-25-000010",
+        "issuerId": "issuer:0001559720",
+        "accession": "0001559720-25-000010",
+        "form": "10-K",
+        "periodEnd": "2024-12-31",
+        "filedAt": "2025-02-13",
+        "primaryDocument": "abnb-20241231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/abnb-20241231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/0001559720-25-000010-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "newer": {
+        "id": "filing:0001559720-26-000004",
+        "issuerId": "issuer:0001559720",
+        "accession": "0001559720-26-000004",
+        "form": "10-K",
+        "periodEnd": "2025-12-31",
+        "filedAt": "2026-02-12",
+        "primaryDocument": "abnb-20251231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/0001559720-26-000004-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "counts": {
+        "total": 1,
+        "added": 0,
+        "removed": 0,
+        "modified": 1
+      },
+      "review": [
+        {
+          "kind": "modified",
+          "heading": "Risk Factors Summary",
+          "oldText": "If we fail to retain or add hosts and guests, if hosts fail to provide high-quality stays and experiences, if our new offerings and initiatives are unsuccessful or if our community support offerings are inadequate, our business, results of operations, and financial condition would be materially adversely affected.",
+          "newText": "If we fail to retain or add hosts and guests, if hosts do not provide high-quality stays, experiences, and services, if new offerings and initiatives on our platform are unsuccessful, or if our community support functions are inadequate, our business, results of operations, and financial condition would be materially adversely affected.",
+          "note": "Verified in the official Item 1A summary passages."
+        }
+      ]
+    },
+    {
+      "ticker": "COST",
+      "comparisonId": "cmp:0000909832-25-000101:0000909832-26-000093:item-1a:align-1.0.0",
+      "older": {
+        "id": "filing:0000909832-25-000101",
+        "issuerId": "issuer:0000909832",
+        "accession": "0000909832-25-000101",
+        "form": "10-K",
+        "periodEnd": "2025-08-31",
+        "filedAt": "2025-10-08",
+        "primaryDocument": "cost-20250831.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/0000909832-25-000101-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "newer": {
+        "id": "filing:0000909832-26-000093",
+        "issuerId": "issuer:0000909832",
+        "accession": "0000909832-26-000093",
+        "form": "10-K",
+        "periodEnd": "2026-08-30",
+        "filedAt": "2026-10-07",
+        "primaryDocument": "cost-20260830.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/0000909832-26-000093-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "counts": {
+        "total": 1,
+        "added": 0,
+        "removed": 0,
+        "modified": 1
+      },
+      "review": [
+        {
+          "kind": "modified",
+          "heading": "Business and Operating Risks",
+          "oldText": "Our financial and operational performance is highly dependent on our U.S. and Canadian operations, which comprised 86% and 84% of net sales and operating income in 2025. Within the U.S., we are highly dependent on our California operations, which comprised 26% of U.S. net sales in 2025.",
+          "newText": "Our financial and operational performance is highly dependent on our U.S. and Canadian operations, which comprised 86% and 83% of net sales and operating income in 2026. Within the U.S., we are highly dependent on our California operations, which comprised 26% of U.S. net sales in 2026.",
+          "note": "Verified in the official Item 1A passages."
+        }
+      ]
+    },
+    {
+      "ticker": "DAL",
+      "comparisonId": "cmp:0000027904-25-000004:0000027904-26-000013:item-1a:align-1.0.0",
+      "older": {
+        "id": "filing:0000027904-25-000004",
+        "issuerId": "issuer:0000027904",
+        "accession": "0000027904-25-000004",
+        "form": "10-K",
+        "periodEnd": "2024-12-31",
+        "filedAt": "2025-02-11",
+        "primaryDocument": "dal-20241231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/dal-20241231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/0000027904-25-000004-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "newer": {
+        "id": "filing:0000027904-26-000013",
+        "issuerId": "issuer:0000027904",
+        "accession": "0000027904-26-000013",
+        "form": "10-K",
+        "periodEnd": "2025-12-31",
+        "filedAt": "2026-02-11",
+        "primaryDocument": "dal-20251231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/0000027904-26-000013-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "counts": {
+        "total": 2,
+        "added": 0,
+        "removed": 0,
+        "modified": 2
+      },
+      "review": [
+        {
+          "kind": "modified",
+          "heading": "Risk Factors Relating to Delta",
+          "oldText": "Because passengers often purchase tickets well in advance of their travel, a significant rapid increase in fuel price may result in the fare charged not covering that increase.",
+          "newText": "Because passengers often purchase tickets well in advance of their travel, a significant rapid increase in fuel price could result in the fare charged not covering that increase.",
+          "note": "Verified in the official Item 1A passages."
+        },
+        {
+          "kind": "modified",
+          "heading": "Risk Factors Relating to Delta",
+          "oldText": "Certain of these covenants impose restrictions on our business, and failure to comply with any of the covenants in these agreements could result in events of default.",
+          "newText": "Certain of these covenants could impose restrictions on our business, and failure to comply with any of the covenants in these agreements could result in events of default.",
+          "note": "Verified in the official Item 1A passages."
+        }
+      ]
+    },
+    {
+      "ticker": "F",
+      "comparisonId": "cmp:0000037996-25-000013:0000037996-26-000015:item-1a:align-1.0.0",
+      "older": {
+        "id": "filing:0000037996-25-000013",
+        "issuerId": "issuer:0000037996",
+        "accession": "0000037996-25-000013",
+        "form": "10-K",
+        "periodEnd": "2024-12-31",
+        "filedAt": "2025-02-06",
+        "primaryDocument": "f-20241231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/f-20241231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/0000037996-25-000013-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "newer": {
+        "id": "filing:0000037996-26-000015",
+        "issuerId": "issuer:0000037996",
+        "accession": "0000037996-26-000015",
+        "form": "10-K",
+        "periodEnd": "2025-12-31",
+        "filedAt": "2026-02-11",
+        "primaryDocument": "f-20251231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/0000037996-26-000015-index.html",
+        "retrievedAt": "2026-11-17T08:15:00.000Z",
+        "sha256": null,
+        "hashStatus": "pending_authorized_ingestion",
+        "bytes": null,
+        "isAmendment": false,
+        "status": "partial"
+      },
+      "counts": {
+        "total": 3,
+        "added": 1,
+        "removed": 1,
+        "modified": 1
+      },
+      "review": [
+        {
+          "kind": "modified",
+          "heading": "Item 1A. Risk Factors",
+          "oldText": "We have listed below the material risk factors applicable to us grouped into the following categories: Operational Risks; Macroeconomic, Market, and Strategic Risks; Financial Risks; and Legal and Regulatory Risks. We have a global business, and conditions in our industry and the regions where we operate and sell our products and services may change quickly.",
+          "newText": "We have listed below the material risk factors applicable to us grouped into the following categories: Operational Risks; Macroeconomic, Market, and Strategic Risks; Financial Risks; and Legal and Regulatory Risks. Some of the risks and contingencies discussed herein may have previously occurred.",
+          "note": "Verified in the official Item 1A introductions."
+        },
+        {
+          "kind": "added",
+          "heading": "Macroeconomic, Market, and Strategic Risks",
+          "newText": "Changes in international trade policy can also have a substantial adverse effect on our financial condition, results of operations, or our business in general.",
+          "note": "Verified in the newer official Item 1A passage."
+        },
+        {
+          "kind": "removed",
+          "heading": "Macroeconomic, Market, and Strategic Risks",
+          "oldText": "Further, the degree of success of some of our investment strategies depends upon IRA tax credit eligibility and for those credits to continue to remain available through the currently contemplated expiration.",
+          "note": "Verified in the prior official Item 1A passage; the newer filing instead describes 2025 legislation eliminating purchaser credits."
+        }
+      ]
+    }
+  ]
+}

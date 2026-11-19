@@ -1,0 +1,121 @@
+{
+  "version": "1.2.0",
+  "inspectedAt": "2026-11-15",
+  "pairs": [
+    {
+      "ticker": "CRWD",
+      "pair": "2024-2025",
+      "cik": "0001535527",
+      "legalName": "CrowdStrike Holdings, Inc.",
+      "displayName": "CrowdStrike",
+      "older": {
+        "filedAt": "2024-03-07",
+        "periodEnd": "2024-01-31",
+        "accession": "0001535527-24-000007",
+        "primaryDocument": "crwd-20240131.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/crwd-20240131.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/0001535527-24-000007-index.html"
+      },
+      "newer": {
+        "filedAt": "2025-03-10",
+        "periodEnd": "2025-01-31",
+        "accession": "0001535527-25-000009",
+        "primaryDocument": "crwd-20250131.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/crwd-20250131.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/0001535527-25-000009-index.html"
+      }
+    },
+    {
+      "ticker": "ABNB",
+      "pair": "2024-2025",
+      "cik": "0001559720",
+      "legalName": "Airbnb, Inc.",
+      "displayName": "Airbnb",
+      "older": {
+        "filedAt": "2025-02-13",
+        "periodEnd": "2024-12-31",
+        "accession": "0001559720-25-000010",
+        "primaryDocument": "abnb-20241231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/abnb-20241231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/0001559720-25-000010-index.html"
+      },
+      "newer": {
+        "filedAt": "2026-02-12",
+        "periodEnd": "2025-12-31",
+        "accession": "0001559720-26-000004",
+        "primaryDocument": "abnb-20251231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/0001559720-26-000004-index.html"
+      }
+    },
+    {
+      "ticker": "COST",
+      "pair": "2025-2026",
+      "cik": "0000909832",
+      "legalName": "Costco Wholesale Corporation",
+      "displayName": "Costco",
+      "older": {
+        "filedAt": "2025-10-08",
+        "periodEnd": "2025-08-31",
+        "accession": "0000909832-25-000101",
+        "primaryDocument": "cost-20250831.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/cost-20250831.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000101/0000909832-25-000101-index.html"
+      },
+      "newer": {
+        "filedAt": "2026-10-07",
+        "periodEnd": "2026-08-30",
+        "accession": "0000909832-26-000093",
+        "primaryDocument": "cost-20260830.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/0000909832-26-000093-index.html"
+      }
+    },
+    {
+      "ticker": "DAL",
+      "pair": "2024-2025",
+      "cik": "0000027904",
+      "legalName": "Delta Air Lines, Inc.",
+      "displayName": "Delta Air Lines",
+      "older": {
+        "filedAt": "2025-02-11",
+        "periodEnd": "2024-12-31",
+        "accession": "0000027904-25-000004",
+        "primaryDocument": "dal-20241231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/dal-20241231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/0000027904-25-000004-index.html"
+      },
+      "newer": {
+        "filedAt": "2026-02-11",
+        "periodEnd": "2025-12-31",
+        "accession": "0000027904-26-000013",
+        "primaryDocument": "dal-20251231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/0000027904-26-000013-index.html"
+      }
+    },
+    {
+      "ticker": "F",
+      "pair": "2024-2025",
+      "cik": "0000037996",
+      "legalName": "Ford Motor Company",
+      "displayName": "Ford",
+      "older": {
+        "filedAt": "2025-02-06",
+        "periodEnd": "2024-12-31",
+        "accession": "0000037996-25-000013",
+        "primaryDocument": "f-20241231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/f-20241231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/0000037996-25-000013-index.html"
+      },
+      "newer": {
+        "filedAt": "2026-02-11",
+        "periodEnd": "2025-12-31",
+        "accession": "0000037996-26-000015",
+        "primaryDocument": "f-20251231.htm",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm",
+        "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/0000037996-26-000015-index.html"
+      }
+    }
+  ]
+}

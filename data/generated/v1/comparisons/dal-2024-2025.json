@@ -1,0 +1,233 @@
+{
+  "id": "cmp:0000027904-25-000004:0000027904-26-000013:item-1a:align-1.0.0",
+  "route": "/compare/dal/2024-2025",
+  "fixtureVersion": "v1",
+  "algorithmVersion": "align-1.0.0",
+  "generatedAt": "2026-11-17T08:15:00.000Z",
+  "status": "partial",
+  "issuer": {
+    "id": "issuer:0000027904",
+    "cik": "0000027904",
+    "ticker": "DAL",
+    "legalName": "Delta Air Lines, Inc.",
+    "displayName": "Delta Air Lines"
+  },
+  "sectionCode": "item-1a",
+  "sectionTitle": "Item 1A — Risk Factors",
+  "olderFiling": {
+    "id": "filing:0000027904-25-000004",
+    "issuerId": "issuer:0000027904",
+    "accession": "0000027904-25-000004",
+    "form": "10-K",
+    "periodEnd": "2024-12-31",
+    "filedAt": "2025-02-11",
+    "primaryDocument": "dal-20241231.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/dal-20241231.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/0000027904-25-000004-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "newerFiling": {
+    "id": "filing:0000027904-26-000013",
+    "issuerId": "issuer:0000027904",
+    "accession": "0000027904-26-000013",
+    "form": "10-K",
+    "periodEnd": "2025-12-31",
+    "filedAt": "2026-02-11",
+    "primaryDocument": "dal-20251231.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/0000027904-26-000013-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "counts": {
+    "total": 2,
+    "added": 0,
+    "removed": 0,
+    "modified": 2
+  },
+  "changes": [
+    {
+      "id": "chg:cmp:0000027904-25-000004:0000027904-26-000013:item-1a:align-1.0.0:modified:f9a5df081426",
+      "comparisonId": "cmp:0000027904-25-000004:0000027904-26-000013:item-1a:align-1.0.0",
+      "kind": "modified",
+      "ordinal": 1,
+      "oldPassage": {
+        "blockId": "block:0000027904-25-000004:item-1a:00001:afe3ebc0a1c2",
+        "displayText": "Because passengers often purchase tickets well in advance of their travel, a significant rapid increase in fuel price may result in the fare charged not covering that increase.",
+        "headingPath": [
+          "Risk Factors Relating to Delta"
+        ],
+        "source": {
+          "id": "src:filing:0000027904-25-000004:block:0000027904-25-000004:item-1a:00001:afe3ebc0a1c2:block:0000027904-25-000004:item-1a:00001:afe3ebc0a1c2",
+          "filingId": "filing:0000027904-25-000004",
+          "blockIds": [
+            "block:0000027904-25-000004:item-1a:00001:afe3ebc0a1c2"
+          ],
+          "accession": "0000027904-25-000004",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/dal-20241231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/0000027904-25-000004-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "afe3ebc0a1c2c046ca6ec270689f443da1c95789c4e7ed6b0a13081d42bd82e0"
+        }
+      },
+      "newPassage": {
+        "blockId": "block:0000027904-26-000013:item-1a:00002:0af5ef09e318",
+        "displayText": "Because passengers often purchase tickets well in advance of their travel, a significant rapid increase in fuel price could result in the fare charged not covering that increase.",
+        "headingPath": [
+          "Risk Factors Relating to Delta"
+        ],
+        "source": {
+          "id": "src:filing:0000027904-26-000013:block:0000027904-26-000013:item-1a:00002:0af5ef09e318:block:0000027904-26-000013:item-1a:00002:0af5ef09e318",
+          "filingId": "filing:0000027904-26-000013",
+          "blockIds": [
+            "block:0000027904-26-000013:item-1a:00002:0af5ef09e318"
+          ],
+          "accession": "0000027904-26-000013",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/0000027904-26-000013-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "0af5ef09e3184095628ab7bf63328be18660269a790934714b1d23df45b1dd93"
+        }
+      },
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [
+        {
+          "kind": "equal",
+          "text": "Because passengers often purchase tickets well in advance of their travel, a significant rapid increase in fuel price "
+        },
+        {
+          "kind": "removed",
+          "text": "may"
+        },
+        {
+          "kind": "equal",
+          "text": " result in the fare charged not covering that increase."
+        }
+      ],
+      "newWordSpans": [
+        {
+          "kind": "equal",
+          "text": "Because passengers often purchase tickets well in advance of their travel, a significant rapid increase in fuel price "
+        },
+        {
+          "kind": "added",
+          "text": "could"
+        },
+        {
+          "kind": "equal",
+          "text": " result in the fare charged not covering that increase."
+        }
+      ],
+      "alignmentReason": "light_edit",
+      "similarity": 0.8,
+      "orderChanged": false
+    },
+    {
+      "id": "chg:cmp:0000027904-25-000004:0000027904-26-000013:item-1a:align-1.0.0:modified:30bfbb721d55",
+      "comparisonId": "cmp:0000027904-25-000004:0000027904-26-000013:item-1a:align-1.0.0",
+      "kind": "modified",
+      "ordinal": 2,
+      "oldPassage": {
+        "blockId": "block:0000027904-25-000004:item-1a:00003:9319a951b491",
+        "displayText": "Certain of these covenants impose restrictions on our business, and failure to comply with any of the covenants in these agreements could result in events of default.",
+        "headingPath": [
+          "Risk Factors Relating to Delta"
+        ],
+        "source": {
+          "id": "src:filing:0000027904-25-000004:block:0000027904-25-000004:item-1a:00003:9319a951b491:block:0000027904-25-000004:item-1a:00003:9319a951b491",
+          "filingId": "filing:0000027904-25-000004",
+          "blockIds": [
+            "block:0000027904-25-000004:item-1a:00003:9319a951b491"
+          ],
+          "accession": "0000027904-25-000004",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/dal-20241231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790425000004/0000027904-25-000004-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "9319a951b49175c80ecdfaf457bd79392877607b6749dec4ba99187c7062547b"
+        }
+      },
+      "newPassage": {
+        "blockId": "block:0000027904-26-000013:item-1a:00004:e1523f5996ce",
+        "displayText": "Certain of these covenants could impose restrictions on our business, and failure to comply with any of the covenants in these agreements could result in events of default.",
+        "headingPath": [
+          "Risk Factors Relating to Delta"
+        ],
+        "source": {
+          "id": "src:filing:0000027904-26-000013:block:0000027904-26-000013:item-1a:00004:e1523f5996ce:block:0000027904-26-000013:item-1a:00004:e1523f5996ce",
+          "filingId": "filing:0000027904-26-000013",
+          "blockIds": [
+            "block:0000027904-26-000013:item-1a:00004:e1523f5996ce"
+          ],
+          "accession": "0000027904-26-000013",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/0000027904-26-000013-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "e1523f5996ce0bc13060ff4441c163d1c12ffa02b83e10daeac33b8537ebea98"
+        }
+      },
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [
+        {
+          "kind": "equal",
+          "text": "Certain of these covenants "
+        },
+        {
+          "kind": "equal",
+          "text": "impose restrictions on our business, and failure to comply with any of the covenants in these agreements could result in events of default."
+        }
+      ],
+      "newWordSpans": [
+        {
+          "kind": "equal",
+          "text": "Certain of these covenants "
+        },
+        {
+          "kind": "added",
+          "text": "could "
+        },
+        {
+          "kind": "equal",
+          "text": "impose restrictions on our business, and failure to comply with any of the covenants in these agreements could result in events of default."
+        }
+      ],
+      "alignmentReason": "light_edit",
+      "similarity": 0.8,
+      "orderChanged": false
+    }
+  ],
+  "exclusions": [
+    {
+      "code": "raw_source_ingestion_pending",
+      "count": 1,
+      "reason": "These manually verified source passages keep the local demo usable. Full-section generation and raw source hashes require an authorized SEC contact header."
+    }
+  ],
+  "method": {
+    "parserVersion": "manual-source-review-2026-11-17",
+    "normalizerVersion": "normalizer-1.0.0",
+    "comparisonVersion": "align-1.0.0"
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "id": "cmp:0000037996-25-000013:0000037996-26-000015:item-1a:align-1.0.0",
+  "route": "/compare/f/2024-2025",
+  "fixtureVersion": "v1",
+  "algorithmVersion": "align-1.0.0",
+  "generatedAt": "2026-11-17T08:15:00.000Z",
+  "status": "partial",
+  "issuer": {
+    "id": "issuer:0000037996",
+    "cik": "0000037996",
+    "ticker": "F",
+    "legalName": "Ford Motor Company",
+    "displayName": "Ford"
+  },
+  "sectionCode": "item-1a",
+  "sectionTitle": "Item 1A — Risk Factors",
+  "olderFiling": {
+    "id": "filing:0000037996-25-000013",
+    "issuerId": "issuer:0000037996",
+    "accession": "0000037996-25-000013",
+    "form": "10-K",
+    "periodEnd": "2024-12-31",
+    "filedAt": "2025-02-06",
+    "primaryDocument": "f-20241231.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/f-20241231.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/0000037996-25-000013-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "newerFiling": {
+    "id": "filing:0000037996-26-000015",
+    "issuerId": "issuer:0000037996",
+    "accession": "0000037996-26-000015",
+    "form": "10-K",
+    "periodEnd": "2025-12-31",
+    "filedAt": "2026-02-11",
+    "primaryDocument": "f-20251231.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/0000037996-26-000015-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "counts": {
+    "total": 3,
+    "added": 1,
+    "removed": 1,
+    "modified": 1
+  },
+  "changes": [
+    {
+      "id": "chg:cmp:0000037996-25-000013:0000037996-26-000015:item-1a:align-1.0.0:modified:e12e40e68920",
+      "comparisonId": "cmp:0000037996-25-000013:0000037996-26-000015:item-1a:align-1.0.0",
+      "kind": "modified",
+      "ordinal": 1,
+      "oldPassage": {
+        "blockId": "block:0000037996-25-000013:item-1a:00001:316e25f8b557",
+        "displayText": "We have listed below the material risk factors applicable to us grouped into the following categories: Operational Risks; Macroeconomic, Market, and Strategic Risks; Financial Risks; and Legal and Regulatory Risks. We have a global business, and conditions in our industry and the regions where we operate and sell our products and services may change quickly.",
+        "headingPath": [
+          "Item 1A. Risk Factors"
+        ],
+        "source": {
+          "id": "src:filing:0000037996-25-000013:block:0000037996-25-000013:item-1a:00001:316e25f8b557:block:0000037996-25-000013:item-1a:00001:316e25f8b557",
+          "filingId": "filing:0000037996-25-000013",
+          "blockIds": [
+            "block:0000037996-25-000013:item-1a:00001:316e25f8b557"
+          ],
+          "accession": "0000037996-25-000013",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/f-20241231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/0000037996-25-000013-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "316e25f8b5578b5890da1e90766ac48cae4ec7c6bedc1ab10cb6edd617c26d3b"
+        }
+      },
+      "newPassage": {
+        "blockId": "block:0000037996-26-000015:item-1a:00002:1bc3b74998be",
+        "displayText": "We have listed below the material risk factors applicable to us grouped into the following categories: Operational Risks; Macroeconomic, Market, and Strategic Risks; Financial Risks; and Legal and Regulatory Risks. Some of the risks and contingencies discussed herein may have previously occurred.",
+        "headingPath": [
+          "Item 1A. Risk Factors"
+        ],
+        "source": {
+          "id": "src:filing:0000037996-26-000015:block:0000037996-26-000015:item-1a:00002:1bc3b74998be:block:0000037996-26-000015:item-1a:00002:1bc3b74998be",
+          "filingId": "filing:0000037996-26-000015",
+          "blockIds": [
+            "block:0000037996-26-000015:item-1a:00002:1bc3b74998be"
+          ],
+          "accession": "0000037996-26-000015",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/0000037996-26-000015-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "1bc3b74998be99cc706ee838d4ebd188a7c982c69a860f7e73177b2846d293be"
+        }
+      },
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [
+        {
+          "kind": "equal",
+          "text": "We have listed below the material risk factors applicable to us grouped into the following categories: Operational Risks; Macroeconomic, Market, and Strategic Risks; Financial Risks; and Legal and Regulatory Risks. "
+        },
+        {
+          "kind": "removed",
+          "text": "We"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "removed",
+          "text": "have"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "removed",
+          "text": "a global business, and conditions in our industry and "
+        },
+        {
+          "kind": "equal",
+          "text": "the "
+        },
+        {
+          "kind": "removed",
+          "text": "regions"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "removed",
+          "text": "where we operate "
+        },
+        {
+          "kind": "equal",
+          "text": "and "
+        },
+        {
+          "kind": "removed",
+          "text": "sell"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "removed",
+          "text": "our"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "removed",
+          "text": "products"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "removed",
+          "text": "and services "
+        },
+        {
+          "kind": "equal",
+          "text": "may "
+        },
+        {
+          "kind": "removed",
+          "text": "change"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "removed",
+          "text": "quickly"
+        },
+        {
+          "kind": "equal",
+          "text": "."
+        }
+      ],
+      "newWordSpans": [
+        {
+          "kind": "equal",
+          "text": "We have listed below the material risk factors applicable to us grouped into the following categories: Operational Risks; Macroeconomic, Market, and Strategic Risks; Financial Risks; and Legal and Regulatory Risks. "
+        },
+        {
+          "kind": "added",
+          "text": "Some"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "added",
+          "text": "of"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "equal",
+          "text": "the "
+        },
+        {
+          "kind": "added",
+          "text": "risks"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "equal",
+          "text": "and "
+        },
+        {
+          "kind": "added",
+          "text": "contingencies"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "added",
+          "text": "discussed"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "added",
+          "text": "herein"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "equal",
+          "text": "may "
+        },
+        {
+          "kind": "added",
+          "text": "have"
+        },
+        {
+          "kind": "equal",
+          "text": " "
+        },
+        {
+          "kind": "added",
+          "text": "previously occurred"
+        },
+        {
+          "kind": "equal",
+          "text": "."
+        }
+      ],
+      "alignmentReason": "light_edit",
+      "similarity": 0.8,
+      "orderChanged": false
+    },
+    {
+      "id": "chg:cmp:0000037996-25-000013:0000037996-26-000015:item-1a:align-1.0.0:added:ca1b3cd4ce17",
+      "comparisonId": "cmp:0000037996-25-000013:0000037996-26-000015:item-1a:align-1.0.0",
+      "kind": "added",
+      "ordinal": 2,
+      "oldPassage": null,
+      "newPassage": {
+        "blockId": "block:0000037996-26-000015:item-1a:00004:9b0100f47eeb",
+        "displayText": "Changes in international trade policy can also have a substantial adverse effect on our financial condition, results of operations, or our business in general.",
+        "headingPath": [
+          "Macroeconomic, Market, and Strategic Risks"
+        ],
+        "source": {
+          "id": "src:filing:0000037996-26-000015:block:0000037996-26-000015:item-1a:00004:9b0100f47eeb:block:0000037996-26-000015:item-1a:00004:9b0100f47eeb",
+          "filingId": "filing:0000037996-26-000015",
+          "blockIds": [
+            "block:0000037996-26-000015:item-1a:00004:9b0100f47eeb"
+          ],
+          "accession": "0000037996-26-000015",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/0000037996-26-000015-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "9b0100f47eeb4dd8ce079db2a81bb7425502bca962d7a4cc4b3dde5327c1c5a3"
+        }
+      },
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [],
+      "newWordSpans": [
+        {
+          "kind": "added",
+          "text": "Changes in international trade policy can also have a substantial adverse effect on our financial condition, results of operations, or our business in general."
+        }
+      ],
+      "alignmentReason": "unmatched_current",
+      "similarity": null,
+      "orderChanged": false
+    },
+    {
+      "id": "chg:cmp:0000037996-25-000013:0000037996-26-000015:item-1a:align-1.0.0:removed:44da8277b59a",
+      "comparisonId": "cmp:0000037996-25-000013:0000037996-26-000015:item-1a:align-1.0.0",
+      "kind": "removed",
+      "ordinal": 3,
+      "oldPassage": {
+        "blockId": "block:0000037996-25-000013:item-1a:00005:f3b55ae0b56e",
+        "displayText": "Further, the degree of success of some of our investment strategies depends upon IRA tax credit eligibility and for those credits to continue to remain available through the currently contemplated expiration.",
+        "headingPath": [
+          "Macroeconomic, Market, and Strategic Risks"
+        ],
+        "source": {
+          "id": "src:filing:0000037996-25-000013:block:0000037996-25-000013:item-1a:00005:f3b55ae0b56e:block:0000037996-25-000013:item-1a:00005:f3b55ae0b56e",
+          "filingId": "filing:0000037996-25-000013",
+          "blockIds": [
+            "block:0000037996-25-000013:item-1a:00005:f3b55ae0b56e"
+          ],
+          "accession": "0000037996-25-000013",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/f-20241231.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799625000013/0000037996-25-000013-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "f3b55ae0b56eed16810a52a6c6dc39c2a93b91a0783db92f77b58c06029864f0"
+        }
+      },
+      "newPassage": null,
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [
+        {
+          "kind": "removed",
+          "text": "Further, the degree of success of some of our investment strategies depends upon IRA tax credit eligibility and for those credits to continue to remain available through the currently contemplated expiration."
+        }
+      ],
+      "newWordSpans": [],
+      "alignmentReason": "unmatched_prior",
+      "similarity": null,
+      "orderChanged": false
+    }
+  ],
+  "exclusions": [
+    {
+      "code": "raw_source_ingestion_pending",
+      "count": 1,
+      "reason": "These manually verified source passages keep the local demo usable. Full-section generation and raw source hashes require an authorized SEC contact header."
+    }
+  ],
+  "method": {
+    "parserVersion": "manual-source-review-2026-11-17",
+    "normalizerVersion": "normalizer-1.0.0",
+    "comparisonVersion": "align-1.0.0"
+  }
+}

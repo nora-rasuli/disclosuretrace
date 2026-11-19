@@ -1,0 +1,5 @@
+{
+  "chatgpt.openOnStartup": true,
+  "chatgpt.followUpQueueMode": "queue",
+  "chatgpt.reviewDelivery": "inline"
+}

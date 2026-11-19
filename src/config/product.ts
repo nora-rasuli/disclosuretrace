@@ -1,0 +1,12 @@
+export const PRODUCT_NAME = "DisclosureTrace";
+export const PRODUCT_SLUG = "disclosuretrace";
+
+export const CONCEPT_DISCLOSURE =
+  "A self-directed concept project. The persona and research scenario are simulated; filing text and metadata come from SEC EDGAR.";
+
+export const DISCLAIMER =
+  `${PRODUCT_NAME} compares filing text for research and educational use. ` +
+  "It does not assess investment significance or provide investment advice. " +
+  "Verify passages in the linked SEC filings.";
+
+export const SEC_ATTRIBUTION = `Source documents: SEC EDGAR. ${PRODUCT_NAME} is not affiliated with or endorsed by the U.S. Securities and Exchange Commission.`;

@@ -1,0 +1,7 @@
+Captured 2026-11-17 against localhost production build.
+
+Canonical comparison API with `Accept-Encoding: gzip`: 1,984 bytes transferred.
+Budget: 350 KB compressed. Result: pass with 356,416 bytes headroom.
+
+Index HTML: 17,104 bytes.
+Route client JavaScript is recorded after Lighthouse/network artifact inspection in the completion report.

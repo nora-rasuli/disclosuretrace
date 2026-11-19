@@ -1,0 +1,13 @@
+{
+  "fixtureVersion": "v1",
+  "parserVersion": "manual-source-review-2026-11-17",
+  "normalizerVersion": "normalizer-1.0.0",
+  "comparisonVersion": "align-1.0.0",
+  "fixtureHashes": [
+    "e6b5b39b97a8c47e2ee4727d2e4e23324a31d4fa57e63717e0ad2b44828e2538",
+    "cadf88aa880ec3d733fa54b07dbd3476600102e43b559aa46e0c06590b54cab0",
+    "68f08f9918828b87c8cb16226f86b0f010e012d36d87543ecd9a6799deb984fe",
+    "7df3a8b493dad136816f69f4a0b117490c947b5feaa99283e9bcb2c0ef0ccc31",
+    "1f3aeef234ff5d8a6507608995f05ac30d187a15acce758a2b6264371787e3c0"
+  ]
+}

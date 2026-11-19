@@ -1,0 +1,250 @@
+{
+  "id": "cmp:0001535527-24-000007:0001535527-25-000009:item-1a:align-1.0.0",
+  "route": "/compare/crwd/2024-2025",
+  "fixtureVersion": "v1",
+  "algorithmVersion": "align-1.0.0",
+  "generatedAt": "2026-11-17T08:15:00.000Z",
+  "status": "partial",
+  "issuer": {
+    "id": "issuer:0001535527",
+    "cik": "0001535527",
+    "ticker": "CRWD",
+    "legalName": "CrowdStrike Holdings, Inc.",
+    "displayName": "CrowdStrike"
+  },
+  "sectionCode": "item-1a",
+  "sectionTitle": "Item 1A — Risk Factors",
+  "olderFiling": {
+    "id": "filing:0001535527-24-000007",
+    "issuerId": "issuer:0001535527",
+    "accession": "0001535527-24-000007",
+    "form": "10-K",
+    "periodEnd": "2024-01-31",
+    "filedAt": "2024-03-07",
+    "primaryDocument": "crwd-20240131.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/crwd-20240131.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/0001535527-24-000007-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "newerFiling": {
+    "id": "filing:0001535527-25-000009",
+    "issuerId": "issuer:0001535527",
+    "accession": "0001535527-25-000009",
+    "form": "10-K",
+    "periodEnd": "2025-01-31",
+    "filedAt": "2025-03-10",
+    "primaryDocument": "crwd-20250131.htm",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/crwd-20250131.htm",
+    "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/0001535527-25-000009-index.html",
+    "retrievedAt": "2026-11-17T08:15:00.000Z",
+    "sha256": null,
+    "hashStatus": "pending_authorized_ingestion",
+    "bytes": null,
+    "isAmendment": false,
+    "status": "partial"
+  },
+  "counts": {
+    "total": 3,
+    "added": 1,
+    "removed": 1,
+    "modified": 1
+  },
+  "changes": [
+    {
+      "id": "chg:cmp:0001535527-24-000007:0001535527-25-000009:item-1a:align-1.0.0:added:d084937b8a4f",
+      "comparisonId": "cmp:0001535527-24-000007:0001535527-25-000009:item-1a:align-1.0.0",
+      "kind": "added",
+      "ordinal": 1,
+      "oldPassage": null,
+      "newPassage": {
+        "blockId": "block:0001535527-25-000009:item-1a:00002:d3870aa04b9c",
+        "displayText": "The July 19 Incident has had, and is expected to continue to have, an adverse effect on our business, sales, customer and partner relations, reputation, results of operations and financial condition.",
+        "headingPath": [
+          "Summary of Risk Factors"
+        ],
+        "source": {
+          "id": "src:filing:0001535527-25-000009:block:0001535527-25-000009:item-1a:00002:d3870aa04b9c:block:0001535527-25-000009:item-1a:00002:d3870aa04b9c",
+          "filingId": "filing:0001535527-25-000009",
+          "blockIds": [
+            "block:0001535527-25-000009:item-1a:00002:d3870aa04b9c"
+          ],
+          "accession": "0001535527-25-000009",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/crwd-20250131.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/0001535527-25-000009-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "d3870aa04b9caabff868530610ab230d1e1b87f9c2f8262d9a9bfedd55b76227"
+        }
+      },
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [],
+      "newWordSpans": [
+        {
+          "kind": "added",
+          "text": "The July 19 Incident has had, and is expected to continue to have, an adverse effect on our business, sales, customer and partner relations, reputation, results of operations and financial condition."
+        }
+      ],
+      "alignmentReason": "unmatched_current",
+      "similarity": null,
+      "orderChanged": false
+    },
+    {
+      "id": "chg:cmp:0001535527-24-000007:0001535527-25-000009:item-1a:align-1.0.0:modified:0b212301d478",
+      "comparisonId": "cmp:0001535527-24-000007:0001535527-25-000009:item-1a:align-1.0.0",
+      "kind": "modified",
+      "ordinal": 2,
+      "oldPassage": {
+        "blockId": "block:0001535527-24-000007:item-1a:00003:8538aaeb3b87",
+        "displayText": "Sales of substantial amounts of our Class A common stock in the public markets, or the perception that they might occur, could reduce the price that our Class A common stock might otherwise attain and may dilute your voting power and your ownership interest in us.",
+        "headingPath": [
+          "Risks Related to Ownership of Our Common Stock"
+        ],
+        "source": {
+          "id": "src:filing:0001535527-24-000007:block:0001535527-24-000007:item-1a:00003:8538aaeb3b87:block:0001535527-24-000007:item-1a:00003:8538aaeb3b87",
+          "filingId": "filing:0001535527-24-000007",
+          "blockIds": [
+            "block:0001535527-24-000007:item-1a:00003:8538aaeb3b87"
+          ],
+          "accession": "0001535527-24-000007",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/crwd-20240131.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/0001535527-24-000007-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "8538aaeb3b87c64f73066febd577424ce41ac0b2418d40aef4584bf143fb5117"
+        }
+      },
+      "newPassage": {
+        "blockId": "block:0001535527-25-000009:item-1a:00004:90dff2132d86",
+        "displayText": "Sales of substantial amounts of our common stock in the public markets, or the perception that they might occur, could reduce the price that our common stock might otherwise attain and may dilute your voting power and your ownership interest in us.",
+        "headingPath": [
+          "Risks Related to Ownership of Our Common Stock"
+        ],
+        "source": {
+          "id": "src:filing:0001535527-25-000009:block:0001535527-25-000009:item-1a:00004:90dff2132d86:block:0001535527-25-000009:item-1a:00004:90dff2132d86",
+          "filingId": "filing:0001535527-25-000009",
+          "blockIds": [
+            "block:0001535527-25-000009:item-1a:00004:90dff2132d86"
+          ],
+          "accession": "0001535527-25-000009",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/crwd-20250131.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552725000009/0001535527-25-000009-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "90dff2132d86c48e57b7bfd9ff5f22c105ad34f3e10d91e1c18a065ce6eba2d9"
+        }
+      },
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [
+        {
+          "kind": "equal",
+          "text": "Sales of substantial amounts of our "
+        },
+        {
+          "kind": "removed",
+          "text": "Class A "
+        },
+        {
+          "kind": "equal",
+          "text": "common stock in the public markets, or the perception that they might occur, could reduce the price that our "
+        },
+        {
+          "kind": "removed",
+          "text": "Class A "
+        },
+        {
+          "kind": "equal",
+          "text": "common stock might otherwise attain and may dilute your voting power and your ownership interest in us."
+        }
+      ],
+      "newWordSpans": [
+        {
+          "kind": "equal",
+          "text": "Sales of substantial amounts of our "
+        },
+        {
+          "kind": "equal",
+          "text": "common stock in the public markets, or the perception that they might occur, could reduce the price that our "
+        },
+        {
+          "kind": "equal",
+          "text": "common stock might otherwise attain and may dilute your voting power and your ownership interest in us."
+        }
+      ],
+      "alignmentReason": "light_edit",
+      "similarity": 0.8,
+      "orderChanged": false
+    },
+    {
+      "id": "chg:cmp:0001535527-24-000007:0001535527-25-000009:item-1a:align-1.0.0:removed:826497b22e17",
+      "comparisonId": "cmp:0001535527-24-000007:0001535527-25-000009:item-1a:align-1.0.0",
+      "kind": "removed",
+      "ordinal": 3,
+      "oldPassage": {
+        "blockId": "block:0001535527-24-000007:item-1a:00005:cb39c0cb5da6",
+        "displayText": "The dual class structure of our common stock has the effect of concentrating voting control with those stockholders who held our capital stock prior to the completion of our initial public offering, including our executive officers, employees, directors, principal stockholders, and their affiliates, which will limit your ability to influence the outcome of matters submitted to our stockholders for approval.",
+        "headingPath": [
+          "Risks Related to Ownership of Our Common Stock"
+        ],
+        "source": {
+          "id": "src:filing:0001535527-24-000007:block:0001535527-24-000007:item-1a:00005:cb39c0cb5da6:block:0001535527-24-000007:item-1a:00005:cb39c0cb5da6",
+          "filingId": "filing:0001535527-24-000007",
+          "blockIds": [
+            "block:0001535527-24-000007:item-1a:00005:cb39c0cb5da6"
+          ],
+          "accession": "0001535527-24-000007",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/crwd-20240131.htm",
+          "indexUrl": "https://www.sec.gov/Archives/edgar/data/1535527/000153552724000007/0001535527-24-000007-index.html",
+          "locatorLabel": "Item 1A — Risk Factors",
+          "excerptSha256": "cb39c0cb5da6c712b92dbcb24f2acee04c888c64f73ec9bf51c45edf9eff2cdc"
+        }
+      },
+      "newPassage": null,
+      "oldContext": {
+        "before": null,
+        "after": null
+      },
+      "newContext": {
+        "before": null,
+        "after": null
+      },
+      "oldWordSpans": [
+        {
+          "kind": "removed",
+          "text": "The dual class structure of our common stock has the effect of concentrating voting control with those stockholders who held our capital stock prior to the completion of our initial public offering, including our executive officers, employees, directors, principal stockholders, and their affiliates, which will limit your ability to influence the outcome of matters submitted to our stockholders for approval."
+        }
+      ],
+      "newWordSpans": [],
+      "alignmentReason": "unmatched_prior",
+      "similarity": null,
+      "orderChanged": false
+    }
+  ],
+  "exclusions": [
+    {
+      "code": "raw_source_ingestion_pending",
+      "count": 1,
+      "reason": "These manually verified source passages keep the local demo usable. Full-section generation and raw source hashes require an authorized SEC contact header."
+    }
+  ],
+  "method": {
+    "parserVersion": "manual-source-review-2026-11-17",
+    "normalizerVersion": "normalizer-1.0.0",
+    "comparisonVersion": "align-1.0.0"
+  }
+}
