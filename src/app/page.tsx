@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LiveCompanySearch } from "@/components/live-company-search";
 import { CONCEPT_DISCLOSURE, DISCLAIMER } from "@/config/product";
 import { loadCatalog } from "@/data/fixture-store";
 
@@ -10,11 +11,12 @@ export default async function HomePage() {
         <p className="eyebrow">Annual filing research workspace</p>
         <h1 id="intro-heading">See what changed between annual filings.</h1>
         <p className="lede">
-          Review Item 1A wording changes with every finding connected to the
-          original SEC text.
+          Retrieve a company’s two latest annual 10-Ks, isolate Item 1A, and
+          review every wording change against the original SEC text.
         </p>
         <p className="disclosure">{CONCEPT_DISCLOSURE}</p>
         <p className="disclaimer">{DISCLAIMER}</p>
+        <LiveCompanySearch />
       </section>
       <section
         aria-labelledby="comparisons-heading"
@@ -22,11 +24,14 @@ export default async function HomePage() {
       >
         <div className="section-heading-row">
           <div>
-            <p className="eyebrow">Frozen corpus · fixture v1</p>
-            <h2 id="comparisons-heading">Five frozen filing pairs</h2>
+            <p className="eyebrow">Saved examples</p>
+            <h2 id="comparisons-heading">
+              See the review workflow immediately
+            </h2>
           </div>
           <p className="method-note">
-            10-K · Item 1A only · No live public fetching
+            These verified examples remain available when SEC EDGAR is slow or
+            unavailable.
           </p>
         </div>
         <ol className="catalog-list">
@@ -47,9 +52,7 @@ export default async function HomePage() {
                   {item.newer.accession}
                 </p>
                 {item.status === "partial" && (
-                  <p className="partial-label">
-                    Manually verified passage set · full ingestion pending
-                  </p>
+                  <p className="partial-label">Verified passage set</p>
                 )}
               </div>
               <Link
@@ -59,7 +62,7 @@ export default async function HomePage() {
                 className="primary-link"
                 aria-label={`Compare ${item.displayName} Item 1A filings`}
               >
-                Compare <span aria-hidden="true">→</span>
+                Open saved example <span aria-hidden="true">→</span>
               </Link>
             </li>
           ))}

@@ -1,85 +1,79 @@
-# DisclosureTrace
+# Disclosure Trace
 
-DisclosureTrace is a source-linked workspace for reviewing how Item 1A risk-factor wording changes between selected annual 10-K filings.
+Disclosure Trace helps research-oriented readers answer a focused question: **what changed in a public company’s annual Risk Factors disclosure?** Enter a ticker and the application retrieves the company’s two latest 10-K filings from SEC EDGAR, extracts Item 1A, and creates a source-linked wording review.
 
-[Open the live application](https://disclosuretrace.vercel.app) · [View Nora Rasuli's portfolio](https://nora-rasuli.github.io)
+[Open Disclosure Trace](https://disclosuretrace.vercel.app) · [View Nora Rasuli’s portfolio](https://nora-rasuli.github.io)
 
-![DisclosureTrace filing-comparison workspace](evidence/screenshots/02-comparison-split-desktop.png)
+![Disclosure Trace filing-comparison workspace](evidence/screenshots/02-comparison-split-desktop.png)
 
-## Product overview
+## The user problem
 
-Reading two long filings side by side makes it easy to lose the exact wording, source context, and follow-up questions that matter. DisclosureTrace turns that work into a focused review queue:
+Annual filings are long, structurally inconsistent documents. A reader comparing two years has to find the correct section twice, keep both source contexts available, distinguish moved text from edited text, and preserve follow-up questions. A generic document diff shows changes, but it does not provide an SEC-aware review workflow.
 
-- compare added, removed, and modified passages in split or unified view;
-- filter and navigate changes with URL-restorable state and keyboard controls;
-- inspect prior and current context with links to the official SEC filings;
-- save browser-local research notes and export them as Markdown;
-- recover from partial data and request failures without presenting an invented complete result.
+Disclosure Trace turns that work into a repeatable sequence:
 
-The current release contains five fixed, curated Item 1A filing pairs. Text classifications describe wording operations only; they do not assess materiality, risk direction, or investment value.
+1. Enter a public-company ticker.
+2. Retrieve the latest two annual 10-Ks from SEC EDGAR.
+3. Review added, removed, and modified Item 1A passages.
+4. Move between source context and the official filings.
+5. Save browser-local notes and export the review as Markdown.
 
-## Demo path
+No account is required. Notes remain in the current browser.
 
-1. Choose a company from the five-pair catalog.
-2. Filter the review queue to modified wording.
-3. Move through the changes and inspect the prior/current filing context.
-4. Save a note, reload the page, and export the comparison notes as Markdown.
+## Product decisions
 
-No account is required. Notes stay in the current browser and do not sync to a server.
-
-## Engineering highlights
-
-- **Typed fixture boundary:** Zod contracts validate the versioned catalog, filings, comparison records, exclusions, and provenance.
-- **Deterministic textual comparison:** exact blocks are matched first; lightly edited blocks use token similarity and ambiguity rules; unmatched text remains explicit addition or removal.
-- **URL-owned review state:** view mode, filters, and active change survive reloads and support shareable review positions.
-- **Accessible document interaction:** prior text precedes current text in the DOM, labels and symbols supplement color, keyboard navigation moves focus, and layouts reflow to 320 px.
-- **Failure-aware UX:** loading, partial, empty-filter, unavailable, retry, not-found, and local-storage failure behavior are explicit.
-- **Privacy by construction:** note creation, storage, deletion, reset, and Markdown export happen client-side.
+- **Live data is the primary path.** Ticker lookup, filing discovery, source retrieval, extraction, and comparison run on demand. The five saved comparisons are resilience and demonstration fallbacks, not the product boundary.
+- **Evidence before interpretation.** The application classifies textual operations; it does not infer risk severity, materiality, direction, or investment significance.
+- **Fail closed on uncertain structure.** If two annual filings or reliable Item 1A boundaries cannot be found, the application explains the failure instead of returning an empty or invented comparison.
+- **Keep research portable without an account system.** Review state is URL-owned; notes are stored locally and export to Markdown.
 
 ## Architecture
 
 ```text
-SEC EDGAR
-   │  explicit maintenance command
-   ▼
-retrieval → Item 1A extraction → normalized blocks → textual alignment
-   │
-   ▼
-versioned comparison fixtures + provenance
-   │
-   ▼
-Next.js API → React review workspace
-                    │
-                    └── browser-local notes + Markdown export
+Ticker
+  │
+  ▼
+SEC company directory → latest two 10-K submissions
+  │
+  ▼
+source HTML → Item 1A boundary validation → normalized blocks
+  │
+  ▼
+exact matching → deterministic alignment → typed comparison API
+  │
+  ▼
+React review workspace → source verification → local notes/export
+
+If SEC is unavailable: saved verified examples remain accessible
 ```
 
-The deployed application makes no live SEC request. Source retrieval and fixture generation are separate maintenance operations, keeping the user path reliable and the data boundary inspectable.
+Server-side SEC requests use a descriptive contact-bearing User-Agent, allowlisted SEC origins, bounded timeouts, and one-hour revalidation. Filing HTML is parsed on the server and never injected into the browser. The client receives schema-validated plain text, source URLs, hashes, stable IDs, and comparison metadata.
+
+## Engineering highlights
+
+- Next.js server routes perform live SEC directory, submissions, and filing retrieval.
+- Zod contracts validate filing metadata, provenance, comparison records, and response boundaries.
+- Exact blocks are matched first; lightly edited passages use deterministic token similarity and ambiguity rules; unmatched passages remain explicit additions or removals.
+- URL-owned filters, view mode, and active-change state make review positions recoverable and shareable.
+- Keyboard navigation, DOM reading order, non-color status cues, focus management, reduced-motion support, and 320 px reflow are built into the core workflow.
+- Loading, unavailable, partial, empty, malformed-source, refresh-failure, and local-storage failure states are explicit.
+- Saved examples make the product inspectable when SEC EDGAR is temporarily unavailable and keep automated tests deterministic.
 
 ## Quality evidence
 
-For the current release:
-
-- 33 unit and component tests pass.
-- 10 production-mode Playwright tests pass across desktop and mobile profiles.
-- Formatting, ESLint, strict TypeScript, fixture-integrity checks, and the production build pass in GitHub Actions.
-- The production dependency audit reports no known vulnerabilities.
-- Local Lighthouse audits recorded median performance and accessibility scores of 100 on the catalog and comparison routes. One comparison run scored 86 performance, so these results should be read as a test profile rather than a universal guarantee.
-
-Raw Lighthouse runs, screenshots, security-header captures, and browser-test reports are stored under `evidence/`.
+The release gate includes formatting, ESLint, strict TypeScript, unit and component tests, deterministic saved-example checks, a production build, Playwright desktop/mobile workflows, accessibility checks, and source-link validation. Evidence artifacts are retained under `evidence/`.
 
 ## Technology
 
 - Next.js 16, React 19, and TypeScript
-- Zod contracts and Cheerio-based document extraction
-- Vitest, Testing Library, jest-axe, and Playwright
-- GitHub Actions and Vercel
+- SEC EDGAR public data
+- Zod, Cheerio, and deterministic text alignment
+- TanStack Query and browser-local storage
+- Vitest, Testing Library, jest-axe, Playwright, GitHub Actions, and Vercel
 
 ## Run locally
 
-### Requirements
-
-- Node.js 22–24
-- pnpm 10.21.0
+Requirements: Node.js 22–24 and pnpm 10.21.0.
 
 ```bash
 pnpm install --frozen-lockfile
@@ -88,14 +82,14 @@ pnpm test:e2e
 pnpm dev
 ```
 
-The application and test suites do not require credentials. SEC ingestion is intentionally separate and requires a descriptive `SEC_USER_AGENT` that follows SEC access guidance.
+`SEC_USER_AGENT` is optional locally because the application includes its public product identity and contact address. Set it to your own truthful application identity and contact email when operating a fork.
 
-## Data and limitations
+## Boundaries
 
-- The catalog is intentionally limited to five fixed annual filing pairs and Item 1A.
-- The committed comparison fixtures contain curated partial passage sets rather than universal filing coverage.
-- The parser is tested against bounded structural fixtures and should not be treated as support for every 10-K format.
-- Browser-local notes have no account, server backup, collaboration, or cross-device sync.
-- DisclosureTrace is not affiliated with or endorsed by the U.S. Securities and Exchange Commission.
+- Live coverage depends on SEC EDGAR availability and the filing’s document structure.
+- The parser supports bounded 10-K HTML patterns and deliberately rejects uncertain Item 1A boundaries.
+- Results describe wording changes, not financial meaning or investment advice.
+- Browser-local notes do not sync across devices and have no server backup.
+- Disclosure Trace is not affiliated with or endorsed by the U.S. Securities and Exchange Commission.
 
-Source documents are linked to SEC EDGAR. The application source is licensed under the [MIT License](LICENSE).
+Source documents are linked to SEC EDGAR. The application is licensed under the [MIT License](LICENSE).

@@ -1,8 +1,8 @@
-export const PRODUCT_NAME = "DisclosureTrace";
+export const PRODUCT_NAME = "Disclosure Trace";
 export const PRODUCT_SLUG = "disclosuretrace";
 
 export const CONCEPT_DISCLOSURE =
-  "An independent product project. Filing text and metadata come from SEC EDGAR.";
+  "Enter a public-company ticker to retrieve its latest two annual filings from SEC EDGAR and compare Item 1A on demand.";
 
 export const DISCLAIMER =
   `${PRODUCT_NAME} compares filing text for research and educational use. ` +

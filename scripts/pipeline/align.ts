@@ -96,6 +96,7 @@ export function buildComparison(
   olderFiling: Filing,
   newerFiling: Filing,
   generatedAt: string,
+  dataVersion: Comparison["fixtureVersion"] = "v1",
 ): Comparison {
   const id = comparisonId(
     olderFiling.accession,
@@ -224,7 +225,7 @@ export function buildComparison(
   return {
     id,
     route: `/compare/${pair.ticker.toLowerCase()}/${pair.pair}`,
-    fixtureVersion: "v1",
+    fixtureVersion: dataVersion,
     algorithmVersion: COMPARISON_VERSION,
     generatedAt,
     status: "complete",

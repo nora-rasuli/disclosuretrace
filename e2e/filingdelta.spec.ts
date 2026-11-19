@@ -3,6 +3,20 @@ import { expect, test } from "@playwright/test";
 const canonical =
   "/compare/crwd/2024-2025?view=split&types=added,removed,modified";
 
+test("live company lookup validates the ticker before requesting SEC data", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const input = page.getByLabel("Company ticker");
+  await expect(input).toBeVisible();
+  await input.fill("123");
+  await page.getByRole("button", { name: "Compare latest 10-Ks" }).click();
+  await expect(
+    page.getByText("Enter a valid ticker, such as CRWD or COST."),
+  ).toBeVisible();
+  await expect(page).toHaveURL(/\/$/);
+});
+
 test("P-01 guided path, URL restoration, note reload, and SH-02 export", async ({
   page,
 }) => {
@@ -10,7 +24,7 @@ test("P-01 guided path, URL restoration, note reload, and SH-02 export", async (
   await expect(
     page.getByRole("heading", { name: /See what changed/ }),
   ).toBeVisible();
-  await expect(page.getByText(/independent product project/)).toBeVisible();
+  await expect(page.getByText(/Enter a public-company ticker/)).toBeVisible();
   await page.getByRole("link", { name: /Compare CrowdStrike/ }).click();
   await expect(page).toHaveURL(/\/compare\/crwd\/2024-2025/);
   await expect(
@@ -72,7 +86,7 @@ test("UX-03 API 503 recovery preserves route state", async ({ page }) => {
     else await route.continue();
   });
   await page.goto(canonical);
-  await page.getByRole("button", { name: "Refresh local fixture" }).click();
+  await page.getByRole("button", { name: "Reload saved example" }).click();
   await expect(
     page.getByRole("alert").filter({ hasText: "Refresh unavailable" }),
   ).toContainText("could not be refreshed");

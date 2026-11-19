@@ -164,6 +164,43 @@ h2 {
   margin: 0.55rem 0;
   color: var(--muted);
 }
+.company-search {
+  max-width: 48rem;
+  margin-top: 2rem;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  background: #fffdf8;
+}
+.company-search > label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+}
+.company-search-row {
+  display: grid;
+  grid-template-columns: minmax(9rem, 1fr) auto;
+  gap: 0.75rem;
+}
+.company-search input {
+  min-height: 48px;
+  border: 1px solid var(--ink);
+  border-radius: 0.2rem;
+  padding: 0.65rem 0.8rem;
+  text-transform: uppercase;
+}
+.company-search button {
+  color: var(--paper);
+  background: var(--ink);
+}
+.field-help,
+.field-error {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.field-error:not(:empty) {
+  color: var(--brick);
+}
 .disclaimer {
   padding-left: 1rem;
   border-left: 3px solid var(--ochre);
@@ -620,6 +657,9 @@ summary {
   }
   .section-heading-row {
     display: block;
+  }
+  .company-search-row {
+    grid-template-columns: 1fr;
   }
   .method-note {
     margin-top: 0.8rem;

@@ -9,20 +9,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://disclosuretrace.vercel.app"),
   title: { default: PRODUCT_NAME, template: `%s · ${PRODUCT_NAME}` },
   description:
-    "A source-linked, deterministic Item 1A filing comparison workspace.",
+    "Retrieve and compare the latest annual Item 1A risk disclosures from SEC EDGAR.",
   icons: { icon: "/favicon.svg" },
   openGraph: {
     type: "website",
     url: "/",
     title: PRODUCT_NAME,
     description:
-      "Review year-over-year Item 1A wording changes with source-linked SEC context.",
+      "Retrieve the latest annual filings and review year-over-year Item 1A wording changes with source-linked SEC context.",
     images: [
       {
-        url: "/social-preview.png",
+        url: "/social-preview.svg",
         width: 1280,
         height: 640,
-        alt: "DisclosureTrace source-linked filing comparison workspace",
+        alt: "Disclosure Trace source-linked filing comparison workspace",
       },
     ],
   },
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: PRODUCT_NAME,
     description:
-      "Review year-over-year Item 1A wording changes with source-linked SEC context.",
-    images: ["/social-preview.png"],
+      "Retrieve the latest annual filings and review year-over-year Item 1A wording changes with source-linked SEC context.",
+    images: ["/social-preview.svg"],
   },
 };
 

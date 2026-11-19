@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
-  <title id="title">DisclosureTrace social preview</title>
-  <desc id="desc">An editorial social card with the DisclosureTrace name, a source-verification promise, and a stylized prior and current filing comparison.</desc>
+  <title id="title">Disclosure Trace social preview</title>
+  <desc id="desc">An editorial social card with the Disclosure Trace name, a source-verification promise, and a stylized prior and current filing comparison.</desc>
   <rect width="1280" height="640" fill="#f6f1e7"/>
   <rect x="0" y="0" width="1280" height="10" fill="#20201d"/>
-  <text x="72" y="86" fill="#20201d" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700">DisclosureTrace</text>
+  <text x="72" y="86" fill="#20201d" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700">Disclosure Trace</text>
   <text x="72" y="126" fill="#656158" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2.4">SOURCE-LINKED ANNUAL FILING COMPARISON</text>
 
   <text x="72" y="224" fill="#20201d" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700">See what changed.</text>

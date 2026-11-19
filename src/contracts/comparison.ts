@@ -51,7 +51,7 @@ const IssuerSchema = z.object({
 export const ComparisonSchema = z.object({
   id: z.string().startsWith("cmp:"),
   route: z.string().startsWith("/compare/"),
-  fixtureVersion: z.literal("v1"),
+  fixtureVersion: z.enum(["v1", "live"]),
   algorithmVersion: z.string(),
   generatedAt: z.iso.datetime(),
   status: z.enum(["complete", "partial"]),

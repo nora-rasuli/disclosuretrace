@@ -1,6 +1,6 @@
 # ADR 0001: fixture-first SEC boundary
 
-**Status:** Accepted locally on 2026-11-17
+**Status:** Superseded by ADR 0002 on 2026-11-18
 **Package:** 1.2.0
 
 ## Decision
@@ -18,3 +18,7 @@ The five committed comparisons are deliberately marked `partial`. They contain m
 - Browser requests cannot leak a contact header or send notes to SEC or any backend.
 - Fixture output is stable and reviewable; a release can be withdrawn or regenerated when source metadata changes.
 - Full-section completeness and raw source hashes must not be claimed until an authorized ingestion run replaces the partial fixtures and all gates are rerun.
+
+## Supersession
+
+The public product goal requires on-demand filing retrieval. ADR 0002 retains saved comparisons for fallback and deterministic testing while making live server-side SEC retrieval the primary path.

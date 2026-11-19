@@ -1,6 +1,7 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
+import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -28,8 +29,8 @@ import { ApiError } from "@/app/providers";
 
 type ViewMode = "split" | "unified";
 
-async function fetchComparison(id: string): Promise<Comparison> {
-  const response = await fetch(`/api/v1/comparisons/${encodeURIComponent(id)}`);
+async function fetchComparison(dataUrl: string): Promise<Comparison> {
+  const response = await fetch(dataUrl);
   if (!response.ok)
     throw new ApiError(
       response.status === 429
@@ -45,31 +46,56 @@ export function ComparisonWorkspace({
   initialComparison,
   issuerLabel,
   pairLabel,
+  dataUrl,
+  sourceMode = "saved",
 }: {
   comparisonId: string;
   initialComparison?: Comparison;
   issuerLabel: string;
   pairLabel: string;
+  dataUrl?: string;
+  sourceMode?: "live" | "saved";
 }) {
+  const resolvedDataUrl =
+    dataUrl ?? `/api/v1/comparisons/${encodeURIComponent(comparisonId)}`;
   const query = useQuery<Comparison>({
-    queryKey: ["comparison", comparisonId],
-    queryFn: () => fetchComparison(comparisonId),
+    queryKey: ["comparison", comparisonId, resolvedDataUrl],
+    queryFn: () => fetchComparison(resolvedDataUrl),
+    staleTime: sourceMode === "live" ? 60_000 : 0,
     ...(initialComparison ? { initialData: initialComparison } : {}),
   });
   if (query.isLoading)
-    return <LoadingState issuer={issuerLabel} pair={pairLabel} />;
-  if (!query.data) return <ErrorState retry={() => void query.refetch()} />;
+    return (
+      <LoadingState
+        issuer={issuerLabel}
+        pair={pairLabel}
+        sourceMode={sourceMode}
+      />
+    );
+  if (!query.data)
+    return (
+      <ErrorState retry={() => void query.refetch()} sourceMode={sourceMode} />
+    );
   return (
     <Workspace
       comparison={query.data}
       refreshError={query.isRefetchError}
       refreshing={query.isFetching}
       onRefresh={() => void query.refetch()}
+      sourceMode={sourceMode}
     />
   );
 }
 
-function LoadingState({ issuer, pair }: { issuer: string; pair: string }) {
+function LoadingState({
+  issuer,
+  pair,
+  sourceMode,
+}: {
+  issuer: string;
+  pair: string;
+  sourceMode: "live" | "saved";
+}) {
   return (
     <main
       id="main-content"
@@ -77,7 +103,11 @@ function LoadingState({ issuer, pair }: { issuer: string; pair: string }) {
       aria-live="polite"
       aria-busy="true"
     >
-      <p className="eyebrow">Loading verified fixture</p>
+      <p className="eyebrow">
+        {sourceMode === "live"
+          ? "Retrieving current SEC filings"
+          : "Loading saved comparison"}
+      </p>
       <h1>{issuer} Item 1A</h1>
       <p>Preparing the {pair} passage comparison and source references…</p>
       <div className="skeleton" aria-hidden="true" />
@@ -85,19 +115,31 @@ function LoadingState({ issuer, pair }: { issuer: string; pair: string }) {
   );
 }
 
-function ErrorState({ retry }: { retry: () => void }) {
+function ErrorState({
+  retry,
+  sourceMode,
+}: {
+  retry: () => void;
+  sourceMode: "live" | "saved";
+}) {
   return (
     <main id="main-content" className="page-shell state-page">
       <div role="alert" className="alert error-alert">
         <p className="eyebrow">Comparison unavailable</p>
         <h1>The filing comparison could not be loaded.</h1>
         <p>
-          No empty diff or cached result was fabricated. Your selected route and
-          filters remain in the URL.
+          {sourceMode === "live"
+            ? "SEC EDGAR may be unavailable, the ticker may not have two compatible annual filings, or Item 1A could not be extracted reliably."
+            : "No empty diff or cached result was fabricated. Your selected route and filters remain in the URL."}
         </p>
         <button type="button" onClick={retry}>
           Retry comparison
         </button>
+        {sourceMode === "live" && (
+          <p>
+            <Link href="/">Try another ticker or open a saved example</Link>
+          </p>
+        )}
       </div>
     </main>
   );
@@ -108,11 +150,13 @@ function Workspace({
   refreshError,
   refreshing,
   onRefresh,
+  sourceMode,
 }: {
   comparison: Comparison;
   refreshError: boolean;
   refreshing: boolean;
   onRefresh: () => void;
+  sourceMode: "live" | "saved";
 }) {
   const search = useSearchParams();
   const router = useRouter();
@@ -321,8 +365,8 @@ function Workspace({
             ))}
           </ul>
           <p>
-            No conclusion should be drawn from passages not included in this
-            local fixture.
+            No conclusion should be drawn from passages outside this verified
+            comparison boundary.
           </p>
         </section>
       )}
@@ -332,7 +376,7 @@ function Workspace({
           <p className="eyebrow">Refresh unavailable</p>
           <h2>The comparison could not be refreshed.</h2>
           <p>
-            The verified local fixture remains visible; route and filter state
+            The last verified comparison remains visible; route and filter state
             were preserved.
           </p>
           <button type="button" onClick={onRefresh}>
@@ -414,7 +458,13 @@ function Workspace({
           onClick={onRefresh}
           disabled={refreshing}
         >
-          {refreshing ? "Refreshing…" : "Refresh local fixture"}
+          {refreshing
+            ? sourceMode === "live"
+              ? "Checking SEC EDGAR…"
+              : "Refreshing…"
+            : sourceMode === "live"
+              ? "Check SEC EDGAR again"
+              : "Reload saved example"}
         </button>
       </section>
 
