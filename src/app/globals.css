@@ -118,11 +118,15 @@ button:disabled {
   margin: 0 auto;
 }
 .index-page {
-  padding-block: clamp(3rem, 8vw, 7rem);
+  padding-block: clamp(2.5rem, 5vw, 4.5rem);
 }
 .intro {
   max-width: 64rem;
-  padding-bottom: clamp(3rem, 7vw, 6rem);
+  padding-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+.intro h1 {
+  max-width: 23ch;
+  font-size: clamp(2.4rem, 6vw, 5rem);
 }
 .eyebrow {
   margin: 0 0 0.65rem;

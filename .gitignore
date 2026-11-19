@@ -15,3 +15,5 @@ data/reports/*.md
 .DS_Store
 *.swp
 *.tsbuildinfo
+.vercel
+.env*

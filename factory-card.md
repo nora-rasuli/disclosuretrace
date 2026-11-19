@@ -13,10 +13,10 @@ This card tracks production state. The frozen package and implementation report 
 
 ## Current state
 
-- **Station:** Local verification complete; external release gate
-- **Status:** Changed — deploy-ready local build with explicit evidence gaps
-- **Next action:** Obtain explicit consent for the contact-bearing SEC User-Agent, choose the public name, regenerate full fixtures twice, and complete the live-source/manual accessibility checks.
-- **External blocker:** Consent to transmit the contact email to SEC, public-name approval, and authorization for GitHub/Vercel creation and deployment.
+- **Station:** Independent audit complete; remediation/pivot gate
+- **Status:** `Not ready` — release `BLOCKED`
+- **Next action:** Decide whether to perform the material workflow pivot required by `originality-gate.md`; do not publish the current concept.
+- **External blocker:** SEC contact-header consent and authorized protected-deployment audit access; technical blockers are recorded in `independent-audit.md`.
 
 ## Artifact index
 
@@ -30,7 +30,7 @@ This card tracks production state. The frozen package and implementation report 
 | Implementation status  | `implementation-status.md`      | Active        | Active                      |
 | Implementation report  | `evidence/completion-report.md` | 2026-11-18    | Complete                    |
 | Evidence register      | `evidence/evidence-register.md` | 2026-11-18    | Complete with declared gaps |
-| Independent audit      | Not created                     | —             | Missing                     |
+| Independent audit      | `independent-audit.md`          | 2026-11-18    | Not ready / BLOCKED         |
 | Hiring-manager review  | Not created                     | —             | Blocked                     |
 | GitHub README          | Blocked until audit             | —             | Blocked                     |
 | Portfolio case study   | Blocked until audit             | —             | Blocked                     |
@@ -72,7 +72,7 @@ This card tracks production state. The frozen package and implementation report 
 - [ ] Required claims and measurements were independently reproduced.
 - [ ] Audit decision permits publishing.
 
-**Decision/date:** Not started.
+**Decision/date:** `Not ready`; release `BLOCKED`, 2026-11-18. P1 findings remain for source integrity, method/determinism, release evidence, and originality.
 
 ### Publishing gate
 

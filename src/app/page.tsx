@@ -23,7 +23,7 @@ export default async function HomePage() {
         <div className="section-heading-row">
           <div>
             <p className="eyebrow">Frozen corpus · fixture v1</p>
-            <h2 id="comparisons-heading">Five verified filing pairs</h2>
+            <h2 id="comparisons-heading">Five frozen filing pairs</h2>
           </div>
           <p className="method-note">
             10-K · Item 1A only · No live public fetching

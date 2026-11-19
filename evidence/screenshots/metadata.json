@@ -1,0 +1,147 @@
+{
+  "capturedAt": "2026-11-19T05:06:08.120Z",
+  "records": [
+    {
+      "filename": "01-index-desktop.png",
+      "route": "/",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "renderedViewport": {
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440
+      },
+      "zoom": "100%",
+      "browser": "Chromium 159.0.8154.6",
+      "capturedAt": "2026-11-19T05:06:08.120Z",
+      "commit": "working-tree-based-on-ed00f764cf29895f3b2e3d956b24eeeda2f3fed0",
+      "deployment": "local production build",
+      "fixtureVersion": "v1",
+      "state": "five-pair partial catalog",
+      "mockedOrIntercepted": false,
+      "consoleErrorCount": 0,
+      "expectedConsoleErrors": []
+    },
+    {
+      "filename": "02-comparison-split-desktop.png",
+      "route": "/compare/crwd/2024-2025?view=split&types=added,removed,modified",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 1200
+      },
+      "renderedViewport": {
+        "width": 1440,
+        "height": 1200,
+        "scrollWidth": 1440
+      },
+      "zoom": "100%",
+      "browser": "Chromium 159.0.8154.6",
+      "capturedAt": "2026-11-19T05:06:08.120Z",
+      "commit": "working-tree-based-on-ed00f764cf29895f3b2e3d956b24eeeda2f3fed0",
+      "deployment": "local production build",
+      "fixtureVersion": "v1",
+      "state": "partial comparison, split view",
+      "mockedOrIntercepted": false,
+      "consoleErrorCount": 0,
+      "expectedConsoleErrors": []
+    },
+    {
+      "filename": "03-comparison-unified-note.png",
+      "route": "/compare/crwd/2024-2025?view=unified&types=modified",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 1200
+      },
+      "renderedViewport": {
+        "width": 1440,
+        "height": 1200,
+        "scrollWidth": 1440
+      },
+      "zoom": "100%",
+      "browser": "Chromium 159.0.8154.6",
+      "capturedAt": "2026-11-19T05:06:08.120Z",
+      "commit": "working-tree-based-on-ed00f764cf29895f3b2e3d956b24eeeda2f3fed0",
+      "deployment": "local production build",
+      "fixtureVersion": "v1",
+      "state": "partial comparison, unified view, saved local note",
+      "mockedOrIntercepted": false,
+      "consoleErrorCount": 0,
+      "expectedConsoleErrors": []
+    },
+    {
+      "filename": "04-comparison-mobile-390.png",
+      "route": "/compare/crwd/2024-2025?view=split&types=added,removed,modified",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "renderedViewport": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390
+      },
+      "zoom": "100%",
+      "browser": "Chromium 159.0.8154.6",
+      "capturedAt": "2026-11-19T05:06:08.120Z",
+      "commit": "working-tree-based-on-ed00f764cf29895f3b2e3d956b24eeeda2f3fed0",
+      "deployment": "local production build",
+      "fixtureVersion": "v1",
+      "state": "partial comparison, stacked mobile split view",
+      "mockedOrIntercepted": false,
+      "consoleErrorCount": 0,
+      "expectedConsoleErrors": []
+    },
+    {
+      "filename": "05-comparison-mobile-320.png",
+      "route": "/compare/crwd/2024-2025?view=split&types=added,removed,modified",
+      "requestedViewport": {
+        "width": 320,
+        "height": 800
+      },
+      "renderedViewport": {
+        "width": 320,
+        "height": 800,
+        "scrollWidth": 320
+      },
+      "zoom": "100%",
+      "browser": "Chromium 159.0.8154.6",
+      "capturedAt": "2026-11-19T05:06:08.120Z",
+      "commit": "working-tree-based-on-ed00f764cf29895f3b2e3d956b24eeeda2f3fed0",
+      "deployment": "local production build",
+      "fixtureVersion": "v1",
+      "state": "partial comparison, 320px reflow",
+      "mockedOrIntercepted": false,
+      "consoleErrorCount": 0,
+      "expectedConsoleErrors": []
+    },
+    {
+      "filename": "06-comparison-refresh-error.png",
+      "route": "/compare/crwd/2024-2025?view=split&types=modified",
+      "requestedViewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "renderedViewport": {
+        "width": 1440,
+        "height": 900,
+        "scrollWidth": 1440
+      },
+      "zoom": "100%",
+      "browser": "Chromium 159.0.8154.6",
+      "capturedAt": "2026-11-19T05:06:08.120Z",
+      "commit": "working-tree-based-on-ed00f764cf29895f3b2e3d956b24eeeda2f3fed0",
+      "deployment": "local production build",
+      "fixtureVersion": "v1",
+      "state": "intercepted comparison API 503 with retained fixture and retry",
+      "mockedOrIntercepted": true,
+      "consoleErrorCount": 3,
+      "expectedConsoleErrors": [
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+      ]
+    }
+  ]
+}

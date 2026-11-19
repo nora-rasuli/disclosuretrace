@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">DisclosureTrace social preview</title>
+  <desc id="desc">An editorial social card with the DisclosureTrace name, a source-verification promise, and a stylized prior and current filing comparison.</desc>
+  <rect width="1280" height="640" fill="#f6f1e7"/>
+  <rect x="0" y="0" width="1280" height="10" fill="#20201d"/>
+  <text x="72" y="86" fill="#20201d" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700">DisclosureTrace</text>
+  <text x="72" y="126" fill="#656158" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2.4">SOURCE-LINKED ANNUAL FILING COMPARISON</text>
+
+  <text x="72" y="224" fill="#20201d" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700">See what changed.</text>
+  <text x="72" y="294" fill="#20201d" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700">Verify the source.</text>
+  <text x="76" y="348" fill="#656158" font-family="Arial, sans-serif" font-size="22">Source-linked Item 1A review · Official SEC context · Browser-local notes</text>
+
+  <g transform="translate(72 402)">
+    <rect width="1136" height="164" rx="4" fill="#fffdf8" stroke="#c9bfad" stroke-width="2"/>
+    <line x1="568" y1="0" x2="568" y2="164" stroke="#c9bfad" stroke-width="2"/>
+    <text x="28" y="34" fill="#656158" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.8">PRIOR FILING</text>
+    <text x="596" y="34" fill="#656158" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.8">CURRENT FILING</text>
+    <rect x="28" y="58" width="446" height="24" rx="3" fill="#f6e8e4"/>
+    <rect x="596" y="58" width="474" height="24" rx="3" fill="#e7f2e8"/>
+    <rect x="28" y="96" width="396" height="16" rx="3" fill="#e9e0d0"/>
+    <rect x="596" y="96" width="432" height="16" rx="3" fill="#e9e0d0"/>
+    <rect x="28" y="126" width="456" height="12" rx="3" fill="#e9e0d0"/>
+    <rect x="596" y="126" width="406" height="12" rx="3" fill="#e9e0d0"/>
+    <rect x="16" y="52" width="5" height="92" fill="#8b372d"/>
+    <rect x="580" y="52" width="5" height="92" fill="#256344"/>
+    <text x="492" y="76" fill="#8b372d" font-family="Arial, sans-serif" font-size="17" font-weight="700">−</text>
+    <text x="1082" y="76" fill="#256344" font-family="Arial, sans-serif" font-size="17" font-weight="700">+</text>
+  </g>
+
+  <text x="72" y="610" fill="#656158" font-family="Arial, sans-serif" font-size="14">Independent concept · Exact five-pair corpus · No investment recommendation</text>
+  <text x="1208" y="610" text-anchor="end" fill="#1c4e80" font-family="Arial, sans-serif" font-size="14" font-weight="700">SEC EDGAR → source context</text>
+</svg>

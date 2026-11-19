@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: { default: PRODUCT_NAME, template: `%s · ${PRODUCT_NAME}` },
   description:
     "A source-linked, deterministic Item 1A filing comparison workspace.",
+  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

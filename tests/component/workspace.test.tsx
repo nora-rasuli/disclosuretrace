@@ -178,6 +178,7 @@ describe("P-01/P-05/P-11/QA-04 comparison workspace", () => {
       screen.getByRole("heading", { name: "No changes match these filters" }),
     ).toBeInTheDocument();
     expect(screen.getByText("∑ Total").parentElement).toHaveTextContent("1");
+    expect(screen.getByRole("button", { name: "Clear filters" })).toBeEnabled();
     expect(
       screen.queryByRole("heading", {
         name: "No meaningful textual changes were detected",
@@ -199,5 +200,26 @@ describe("P-01/P-05/P-11/QA-04 comparison workspace", () => {
     expect(
       screen.getByText(/kept for this session.*could not persist/i),
     ).toBeInTheDocument();
+  });
+
+  test("P-11 reset-all clears the visible draft and saved note state", async () => {
+    const user = userEvent.setup();
+    renderWorkspace();
+    await screen.findByRole("heading", { name: /what changed/i });
+    const note = screen.getByLabelText(/Note for change/);
+    await user.type(note, "Clear this note everywhere");
+    await user.click(screen.getByRole("button", { name: "Save note" }));
+    await user.click(
+      screen.getByRole("button", {
+        name: "Reset all notes for this comparison",
+      }),
+    );
+    expect(note).toHaveValue("");
+    expect(
+      screen.getByText("All notes cleared for this comparison."),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Download notes/ }),
+    ).toBeDisabled();
   });
 });

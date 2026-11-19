@@ -141,6 +141,10 @@ function Workspace({
   const activeIndex = active
     ? visible.findIndex((change) => change.id === active.id)
     : -1;
+  const excludedCount = comparison.exclusions.reduce(
+    (total, exclusion) => total + exclusion.count,
+    0,
+  );
 
   const updateUrl = useCallback(
     (updates: Record<string, string | null>) => {
@@ -260,6 +264,7 @@ function Workspace({
     setNotes(next);
     try {
       persistNotes(window.localStorage, comparison.id, next);
+      setStorageWarning(null);
     } catch {
       setStorageWarning(
         "The note was removed for this session, but browser storage could not be updated.",
@@ -271,6 +276,7 @@ function Workspace({
     setNotes({});
     try {
       persistNotes(window.localStorage, comparison.id, {});
+      setStorageWarning(null);
     } catch {
       setStorageWarning(
         "Notes were cleared for this session, but browser storage could not be updated.",
@@ -306,7 +312,14 @@ function Workspace({
           <h2 id="partial-title">
             Only manually verified source passages are shown.
           </h2>
-          <p>{comparison.exclusions[0]?.reason}</p>
+          <p>
+            {excludedCount} excluded data set{excludedCount === 1 ? "" : "s"}:
+          </p>
+          <ul>
+            {comparison.exclusions.map((exclusion) => (
+              <li key={exclusion.code}>{exclusion.reason}</li>
+            ))}
+          </ul>
           <p>
             No conclusion should be drawn from passages not included in this
             local fixture.
@@ -421,6 +434,17 @@ function Workspace({
               Choose a change type to continue. The filing-level counts remain
               above.
             </p>
+            <button
+              type="button"
+              onClick={() =>
+                updateUrl({
+                  types: CHANGE_KINDS.join(","),
+                  change: comparison.changes[0]?.id ?? null,
+                })
+              }
+            >
+              Clear filters
+            </button>
           </section>
         )
       ) : (
@@ -529,7 +553,11 @@ function Provenance({ comparison }: { comparison: Comparison }) {
           </p>
           <p>
             <strong>Source hash</strong>{" "}
-            {filing.sha256 ? filing.sha256 : "Pending authorized raw ingestion"}
+            <span className="wrap-anywhere">
+              {filing.sha256
+                ? filing.sha256
+                : "Pending authorized raw ingestion"}
+            </span>
           </p>
           <p>
             <a
@@ -782,7 +810,12 @@ function NotePanel({
         type="button"
         className="danger-button"
         disabled={!count}
-        onClick={onReset}
+        onClick={() => {
+          onReset();
+          setDraft("");
+          setError(null);
+          setStatus("All notes cleared for this comparison.");
+        }}
       >
         Reset all notes for this comparison
       </button>

@@ -110,6 +110,24 @@ test("UX-06/A11Y-01/A11Y-06 320px reflow completes the note workflow without hor
   await expect(page.getByText("Saved in this browser.")).toBeVisible();
 });
 
+test("P-11 reset-all clears the current editor and browser persistence", async ({
+  page,
+}) => {
+  await page.goto(canonical);
+  const note = page.getByLabel(/Note for change/);
+  await note.fill("Remove this local audit note");
+  await page.getByRole("button", { name: "Save note" }).click();
+  await page
+    .getByRole("button", { name: "Reset all notes for this comparison" })
+    .click();
+  await expect(note).toHaveValue("");
+  await expect(
+    page.getByText("All notes cleared for this comparison."),
+  ).toBeVisible();
+  await page.reload();
+  await expect(page.getByLabel(/Note for change/)).toHaveValue("");
+});
+
 test("P-08/QA-06 exposes only allowlisted official SEC source URLs", async ({
   request,
 }) => {
